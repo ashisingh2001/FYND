@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{ transition: all 0.2s ease-in-out;
+        font-size: 30px;
+        }
+        body{
+            background-color: maroon;
+            display: grid;
+            place-items: center;
+            height: 100vh;
+            margin: 0;
+            
+        }
+
+        .card{
+            background: black;
+            color: maroon;
+            height: 85vh;
+            width: 80vw;
+            text-align: center;
+            display: flex;
+justify-content: center;
+align-items: center;
+/* padding: 1rem; */
+overflow: hidden;
+        }
+
+        img{
+            width: 600px;
+            max-height: 40vh;
+        }
+.text{
+    padding: 1em;
+}
+.demo{
+    opacity: 0.8;
+}
+.space{
+    height: 100px;
+}
+@media (max-width:700px){
+    .card{flex-direction: column;}
+   img{
+    width: 100%;
+    max-width:50vw
+   }
+}
+
+@media (min-width:1000px){
+    .card{flex-direction: row;}
+}
+</style>
+</head>
+<body>
+    <div class="card">
+        <img src="https://th.bing.com/th/id/OIP.-bmtmRVmfwaRnhTNYoPUAAHaEo?pid=ImgDet&rs=1" alt="">
+        <div class="text">
+            <h1>Happy Birthday!</h1>
+            <p>I hope you have  wonderful birthday</p>
+            <p class="demo">--Peter Parker</p>
+
+        </div>
+        <div class="space"></div>
+    </div>
+</body>
+</html>
+
+
+
+
+birthday animatio
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: brown;
+        }
+        .card{
+            width: 640px;
+            height: 400px;
+            position: absolute;
+            margin: auto;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            transition: 1s;
+            /* border: 2px solid white; */
+        }
+
+        .card:hover{
+            transform: rotate(-5deg);
+        }
+
+        .card:hover .outside{
+            /* transform: rotate(-130deg); */
+            transform: rotateY(180deg);
+            background: white;
+        }
+
+        .outside, .inside{
+            height: 100%;
+            width: 50%;
+            position: absolute;
+            left: 50%;
+        }
+        .outside{
+            -webkit-transform-style:preserve-3d ;
+            transform-style: preserve-3d;
+            z-index: 1;
+            transform-origin: left;
+            transition: 2s;
+            cursor: pointer;
+            /* background-color: yellow; */
+        }
+        .inside{
+            background: linear-gradient(to right, #e7e7e7, #fff 30%) ;
+            line-height: 3;
+            padding: 0 20px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            left: 50%;
+        }
+        .front,.back{
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            transform: rotateX(0deg);
+            -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+        }
+        .front{
+            background-color: #fff;
+        }
+        .back{
+
+            transform: rotateX(180deg);
+            background: linear-gradient(to left, #e7e7e7, #fff 30%) ;
+        }
+        .cake{
+            width: 100%;
+            position: absolute;
+            bottom: 30px;
+        }
+        .top_layer,.middle_layer,.bottom_layer{
+            height: 80px;
+            width: 240px;
+            background-size: 60px 100px;
+            background-repeat: repeat;
+            background-position: 28px 0;
+            background-image: linear-gradient(transparent 50px, #fedbab 50px,yellow 60px,brown 60px),
+            radial-gradient(circle at 30px 5px, #994d10 30px, #fcbf29 31px);
+            border-radius: 10px 10px 0 0;
+            position: relative;
+            margin: auto;
+        }
+        .top_layer{
+            transform: scale(0.7);
+            top: 25px;
+        }
+        .middle_layer{
+            transform: scale(0.85);
+            top: 6px;
+        }
+        .candle{
+            height: 45px;
+            width: 15px;
+            background: repeating-linear-gradient(45deg,tomato 0, tomato 5px, yellowgreen 5px,yellowgreen 10px );
+            position: absolute;
+            margin: auto;
+            right: 0;
+            left: 0;
+            bottom: 203px;
+        }
+        .candle::before{
+            content: ' ';
+            position: absolute;
+            right: .001rem;
+            height: 15px;
+            width: 13px;
+            background-color: tomato;
+            border-radius: 0 50% 50% 50%;
+            bottom: 44px;
+            transform: rotate(40deg);
+        }
+
+        .outside p{
+            font-size: 23px;
+            text-transform: uppercase;
+            margin-top: 30px;
+            text-align: center;
+            letter-spacing: 5px;
+        }
+        .inside h1{
+            font-size: 120px;
+            line-height: 120px;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="outside">
+            <div class="front">
+                <p>happy Birthday</p>
+                <div class="cake">
+                    <div class="top_layer"></div>
+                    <div class="middle_layer"></div>
+                    <div class="bottom_layer"></div>
+                    <div class="candle"></div>
+                </div>
+            </div>
+            <div class="back"></div>
+        </div>
+        <div class="inside">
+            <p>Wishing you a very happy birthday with lots of love </p>
+            <h1>&#127873</h1>
+        </div>
+    </div>
+</body>
+</html>

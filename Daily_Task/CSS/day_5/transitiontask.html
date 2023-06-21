@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       div{
+        transition-property: all 0.2s ease-in;
+       }
+       .box1{
+           width: 200px;
+           height: 150px;
+           background-color:powderblue;
+           transition-property: all 0.2s ease-out;
+       } 
+       .box2{
+        width: 200px;
+           height: 150px;
+        background-color:lightskyblue;
+        transition-property: all 0.2s linear;
+       }
+       .box3{
+        width: 200px;
+           height: 150px;
+        background-color:rgb(13, 243, 13);
+        transition-property: all 0.2s ease-in;
+       }
+       .box4{
+        width: 200px;
+           height: 150px;
+        background-color:greenyellow;
+        transition-property: all 0.2s ease-out;
+       }
+       div:hover{
+        width: 400px;
+       }
+    </style>
+</head>
+<body>
+    <nav class="container">
+        <div class="box1"><a  href="#home">HOME</a></div>
+        <div class="box2"><a  href="#about">About Us</a></div>
+        <div class="box3"><a  href="#contact">Contact</a></div>
+        <div class="box4"><a  href="#info">Info</a></div>
+    </nav>
+</body>
+</html>

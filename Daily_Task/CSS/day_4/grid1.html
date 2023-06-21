@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        .container{
+           display:grid;
+           height: 100vh;
+           grid-template-areas:
+           "navbar navbar navbar navbar" 
+           "main aside aside aside"
+           "main aside aside aside"
+           "footer footer footer footer";
+           grid-template-rows:1fr 3fr 3fr 0fr;
+        }
+        .item{
+            border:4px solid black;
+            background-color: orangered;
+            padding:10px;
+        }
+        #navbar{grid-area: navbar;
+        background-color: white;}
+        #main{grid-area: main;}
+        #aside{grid-area: aside;}
+        #footer{grid-area: footer;}
+
+    </style>
+</head>
+<body>
+   <div class="container">
+    <div id="navbar" class="item">Home About Info contact</div>
+
+    <div id="main" class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore commodi beatae placeat. Quam, exercitationem hic asperiores dolores omnis molestias? Beatae hic eos cum.
+    </div>
+
+    <div id="aside" class="item">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam iste, nesciunt, quo officiis fugit aut incidunt eius quos itaque deleniti sed perspiciatis deserunt minus non a voluptas esse earum. Blanditiis.Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam iste, nesciunt, quo officiis fugit aut incidunt eius quos itaque deleniti sed perspiciatis deserunt minus non a voluptas esse earum. Blanditiis.lore</div>
+   </div> 
+
+   <div id="footer" class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod ad, enim velit accusantium esse cum, voluptatem nemo iste laboriosam voluptas voluptatibus! Deserunt enim, reiciendis vel debitis eligendi quas dignissimos consectetur.</div>
+</body>
+</html>

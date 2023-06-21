@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <meta rel="stylesheet" href="style.css"> -->
+    <style>
+        body{
+            display:flex;
+            background-color:powderblue;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+        .container{
+            position: relative;
+            top:50px
+        }
+        .cup{
+            position: relative;
+            width: 400px;
+            height: 300px;
+            background: linear-gradient(300deg,#f9f9f9,#d0d0d0);
+            border-radius: 20px 20px 500px 500px;
+            
+        }
+        .handle{
+            position:absolute;
+            right: -70px;
+            top: 40px;
+            width:140px ;
+            height: 120px;
+            border: 30px solid #f0f0f0;
+            border-top: 30px solid transparent;
+            border-left: 30px solid transparent;
+            border-radius: 50%; 
+             transform: rotate(-42deg) ;
+        }
+        .saucer{
+            position: absolute;
+            left:7%;
+            bottom:-10%;
+            width: 350px;
+            height: 50px;
+            background: linear-gradient(300deg,#f9f9f9,#d0d0d0);
+            border-radius: 40px 40px 500px 500px;
+        }
+       
+        #vap{
+          position:absolute;
+          top: -50px;
+          width:90px ;  
+          height: 90px;
+          background-color:white;
+          border-radius: 50%;
+          margin-left: 150px;
+          /* margin-top:100px ; */
+          opacity:0;
+          /* z-index:0;  */
+        }
+       .vapour1{
+        animation: vapour1 4s ease-out infinite;
+       } 
+       .vapour3{
+        animation: vapour1 4s ease-out 1s infinite;
+       } 
+       @keyframes vapour1{
+        0%{
+            transform: translateY(0) translateX(0) scale(0.75) ;opacity:0.25;
+        }
+        100%{
+            transform: translateY(-200px) translateX(-20px) scale(1.5);opacity:0;
+        } 
+       }
+       .vapour2{
+        animation: vapour2 4s ease-out 0.5s infinite;
+       } 
+       .vapour4{
+        animation: vapour2 4s ease-out 1.5s    infinite;
+       } 
+       @keyframes vapour2{
+        0%{
+            transform: translateY(0) translateX(0px) scale(0.75) ;opacity:0.25;
+        }
+        100%{
+            transform: translateY(-200px) translateX(20px) scale(1.5);opacity:0;
+        } 
+       }
+       .shadow{
+        position: absolute;
+        /* left: 30px; */
+        bottom: -20%;
+        width: 100%;
+        height: 10px;
+        border-radius: 50%;
+        background-color:#cac7c7;
+       }
+       
+       
+    </style>
+</head>
+<body>
+    <div class="container">
+        
+            <div id="vap" class="vapour1"></div>
+            <div id="vap" class="vapour2"></div>
+            <div id="vap" class="vapour3"></div>
+            <div id="vap" class="vapour4"></div>
+        
+        <div class="cup">
+            <div class="saucer ">
+                <div class="shadow"></div>
+            </div>
+           
+        <div class="handle"></div></div>
+        <!-- <div class="saucer"></div>
+        <div class="handle"></div> -->
+    </div>
+</body>
+</html>

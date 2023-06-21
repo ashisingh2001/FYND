@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        /* task 1 */
+        .display{
+            background-color:purple;
+            color: white;
+            width: 50px;
+            height: 60px;
+            display:block;
+        }
+        .text1{
+            color:blue;
+            letter-spacing: 10px;
+            text-transform: capitalize;
+            word-spacing: 10px;
+            text-decoration-line: line-through  ;
+            text-decoration-style: wavy ;
+            text-underline-offset: 10px;
+            /* background-color: black; */
+            text-indent: ;
+            text-decoration-color:rgba(197, 150, 200, 0.6)  
+              
+        }
+        .text2{
+            text-decoration-line: overline ;
+            text-decoration-style:dashed; 
+            text-decoration-color: brown;  
+        }
+        .text3{
+            text-decoration-line:underline;
+            text-underline-offset: 10px;
+            text-decoration-color: red;    
+        }
+        .span1{
+            text-decoration-line: line-through;
+            text-decoration-style: wavy;
+            text-decoration-color:rgba(150, 200, 172, 1) ; 
+        }
+        .indent{
+            text-indent:3rem;
+            background-color:powderblue;
+        }
+        .shadow1{
+            word-spacing: 20px;
+            letter-spacing: 5px;
+            font-size: 50px;
+           text-shadow:5px 5px 5px #558abb;
+        }
+        .shadow2{
+            word-spacing: 20px;
+            letter-spacing: 5px;
+            font-size: 50px;
+            text-shadow:4px 4px 10px red,10px 10px 10px blue ; 
+        }
+        p ~ div{
+            background-color: orangered;
+        }
+        
+
+    </style>
+</head>
+<body>
+  <div class="demo">Lorem ipsum <p class="display
+    ">dolor </p> amet consectetur adipisicing elit. Vitae dolores reprehenderit nihil rerum eaque eius quaerat unde explicabo . Nemo, nam deserunt accusantium fugit earum illum nobis ratione repellendus reprehenderit harum!</div> 
+    <!-- task2 -->
+<div class="text3">
+    <div class="text2">
+    <h1 class="text1">Text Transformation</h1>
+    </div>
+</div>
+
+
+<hr>
+<div class="text3">
+    <div class="text2">
+    <h1 class="text1">Text<span class="span1">Transformation</span><h1>
+    </div>
+</div>
+<hr>
+
+<!-- <h1>SHADOWS<h2>IN</h2> <h3>CSS</h3></h1> -->
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis unde, culpa, mollitia laboriosam perferendis laudantium, doloribus molestias aspernatur blanditiis corrupti quis molestiae. Optio mollitia eaque assumenda ipsam ex non explicabo</p>
+
+<h2 >With Indentation</h2>
+
+<p class="indent">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis unde, culpa, mollitia laboriosam perferendis laudantium, doloribus molestias aspernatur blanditiis corrupti quis molestiae. Optio mollitia eaque assumenda ipsam ex non explicabo</p>
+
+<h1 class="shadow1">SHADOW IN CSS</h1>
+<h1 class="shadow2">SHADOW IN CSS</h1>
+
+<div >
+    <p>Paragraph 1</p>
+    <p>Paragraph 2</p>
+    <div>
+        <p>paragraph 3</p>
+    </div>
+    <div>
+        <p>paragraph 3......</p>
+    </div>
+    <section>section1
+        <p>paragraph 4</p>
+        <div>Paragraph 5</div>
+    </section>
+</div>
+<p>paragraph 6</p>
+<p>paragraph 7</p>
+
+<div>PARAGRAPH 9</div>
+
+</body>
+</html>

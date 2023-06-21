@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-color:orangered;
+        }
+        .card{
+            width: 640px;
+            height: 400px;
+            background-color: #fff;
+            position:absolute;
+            margin: auto;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            top: 0;
+        }
+        .outside{
+           /* z-index: 1; */
+           /* border: 2px solid white; */
+           background-color:yellow;
+        }
+        .inside{
+            /* border: 2px solid white;  */
+            background-color:pink;
+        }
+        .outside,.inside{
+          height: 100%;
+           width: 50%;
+           /* position: absolute;
+           left:50% */
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="outside">
+            <div class="front">
+                <p>Happy Birthday</p>
+                <div class="cake">
+                    <div class="layer1"></div>
+                    <div class="layer2"></div>
+                    <div class="layer3"></div>
+                </div>
+            </div>
+            <div class="back"></div>
+        </div>
+        <div class="inside">
+            <p>god bless you</p>
+            <h1>🎁</h1>
+        </div>
+    </div>
+</body>
+</html>

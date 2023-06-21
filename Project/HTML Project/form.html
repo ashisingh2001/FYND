@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Forms</title>
+</head>
+
+<body style="text-align: center;background-image: url('daisy.jpg');background-size: 1450px 800px;">
+    <h1>This is a Survey</h1>
+    <p style="font-size: 25px;">Please kindly fill out this form</p>
+    <form action="#">
+        <label for="name"> Name :</label>
+        <div>
+            <input type="text" name="myName" id="name">
+        </div>
+        <br>
+        
+        <label for="myEmail"> Email :</label>
+        <div>
+            <input type="email" name="myEmail" >
+            <!-- Email: <input type="email" name="myEmail"> -->
+        </div> 
+        <br>
+        <div>
+            Date: <input type="date" name="myDate">
+        </div>
+        <br>
+        <div>
+            <br>
+            <label for="ques">Do you like to paint</label>
+            <select name="draw" id="ques">
+                <option value="y">Yes😁</option>
+                <option value="n" selected>No 😒</option>
+            </select>
+        </div>
+        <br>
+
+        <br>
+        <div>
+            <label for="painting">Which Paintings are your Favourite</label>
+            <select name="draw" id="painting">
+                <option value="skt">Sketches✏️</option>
+                <option value="canv" selected>Canvas Painting🎨</option>
+            </select>
+        </div>
+        <br>
+        <div>
+            Write about yourself📄: <br><textarea name="myText" cols="40" rows="10"></textarea>
+        </div>
+
+        <br>
+        
+
+        <div>
+            <input type="submit" onclick="alert('Submitted Successfully')"value="Submit Now">
+            <input type="reset" value="Reset Now">
+        </div>
+    </form>
+</body>
+
+</html>

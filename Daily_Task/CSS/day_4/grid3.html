@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin:0px;
+            padding:0px;
+            box-sizing: border-box;
+
+
+        }
+        main{
+            width: 75%;
+            display:grid;
+            margin:50px auto;
+            border:3px solid black;
+            background-color:purple;
+            color:black;
+            grid-template-columns: repeat(3,1fr) 150px;
+            grid-template-rows: 60px 70px 50px 100px;
+            gap:10px;
+        }
+        .div1{
+            background-color: yellow;
+            grid-column: 1/-1;
+        }
+        .div2{
+            background-color: cyan;
+
+        }
+        .div3{
+            background-color: #fff;
+        }
+        .div4{
+            background-color: pink;
+        }
+        .aside{
+            background-color:green;
+            grid-row: 2/4;
+        }
+        .section{
+            background-color: orange;
+            grid-column: 2/5;
+        }
+        .footer{
+            background-color:aqua;
+            grid-column:1/5;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div class="div1">NAVBAR</div>
+        <div class="div2">box1</div>
+        <div class="div3">box2</div>
+        <div class="div4">box3</div>
+        <div class="aside">Side Bar</div>
+        <div class="section">Section</div>
+        <div class="footer">Footer</div>
+    </main>
+</body>
+</html>
+
