@@ -115,7 +115,7 @@ function Register() {
    <div className="brand">
             <img src={Logo} alt="logo" />
             {/* <img src="" alt="" /> */}
-            <h1>snappy</h1>
+            <h1>conversa</h1>
           </div>
           <input
             type="text"
